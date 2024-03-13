@@ -1,0 +1,38 @@
+
+/*Card content*/
+/* Flex container */
+/* .card-container {
+    display: flex;
+    justify-content: space-between; 
+ } */
+
+/* Individual card styles */
+.card {
+    width: 30%; 
+    background-color:rgb(161, 150, 150);
+    border-style: hidden;
+    padding: 20px;
+    background-color: rgb(180, 179, 179);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 1rem;
+    
+}
+.h1{
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+/* Image styles */
+.card img {
+    width: 100%; /* Make the image fill the container */
+    border-radius: 8px; /* Optional: Add border-radius for rounded corners */
+}
+
+/*To make images inside card hover*/
+.card:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}

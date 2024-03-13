@@ -1,0 +1,267 @@
+/*Navbar*/
+nav {
+  background-color:black;
+  overflow: hidden;
+}
+
+/* .row{
+width: 60px;
+height: 80px;
+} */
+/*Navbar*/
+nav .a1 {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 28px 26px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.user{
+height: 70px;
+width: 100%;
+background: rgb(247, 245, 245);
+color: red;
+text-align: right;
+}
+.wel{
+padding-right: 15px;
+font-weight: bolder;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+margin-top: 4px;  
+}
+.userlogo{
+padding-right: 40px;
+padding-top: 10px;
+padding-bottom: 0%;
+padding-right: 10px;
+}
+
+/*Navbar*/
+nav .a1:hover {
+  background-color: black;
+  color: rgb(255, 37, 37);
+  font-size: 25px;
+}
+
+.logo {
+  background-color:black;
+  display: block;
+  float: left;
+  zoom: 330%;
+
+  
+
+}
+
+/*Navbar content LHS*/
+.nav-left{
+  float: left;
+}
+/*Navbar content RHS*/
+.nav-right {
+  float: right;
+
+}
+
+.full-page-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+ 
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: auto;
+}
+
+.overlay-text {
+  font-size: 30px;
+  position: absolute;
+  top: 2%;
+  left: 28%;
+  transform: translate(-40%, -60%);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.overlay-text:hover{
+  color: #0cf7ff;
+}
+
+.section-one{
+    display: flex;
+    align-items: center;
+}
+.sec-one{
+    width: 100%;
+    height: 40vh;
+    /* background-color: rgb(66, 38, 38); */
+background-image: url('watches/images/bgimg.jpg');
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.sec-one-offer{
+font-size: 4rem;
+color:rgb(153, 99, 99);
+font-family: 'Allison',cursive;
+text-transform: uppercase;
+}
+.sec-one-heading{
+    font-size: 4rem;
+    color: rgb(221, 113, 113);
+margin-bottom: 1rem;
+}
+
+.sec-one-button{
+font-size: 1.1rem;
+padding: 1rem 1.7rem;
+background-color: rgb(255, 201, 201);
+cursor: pointer;
+transform: scale(1.1);
+transition: 0.5s ease;
+
+}
+.sec-two-button{
+    font-size: 1.1rem;
+    padding: 1rem 1.7rem;
+    background-color: rgb(192, 104, 104);
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s ease;
+    display: flex;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+    }
+
+
+div.scroll-container {
+        /* background-color: #333; */
+        overflow: auto;
+        white-space: nowrap;
+        padding: 10px;
+      }
+      
+div.scroll-container img {
+        padding: 10px;
+      }
+
+
+
+/* ............about.......... */
+
+
+* {box-sizing: border-box;}
+
+.img-comp-container {
+        position: relative;
+        height: 200px; /*should be the same height as the images*/
+      }
+      
+.img-comp-img {
+        position: absolute;
+        width: auto;
+        height: auto;
+        overflow: hidden;
+      }
+      
+.img-comp-img img {
+        display: block;
+        /* vertical-align: middle; */
+      }
+      
+.img-comp-slider {
+        position: absolute;
+        z-index: 9;
+        cursor: ew-resize;
+        /*set the appearance of the slider:*/
+        width: 40px;
+        height: 40px;
+        background-color: #2196F3;
+        opacity: 0.7;
+        border-radius: 50%;
+      }
+
+
+      /* .......about us......... */
+
+      /* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #ff0707;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 1rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  
+  .about, .team {
+    margin-bottom: 2rem;
+  }
+  
+  .team-member {
+    text-align: center;
+  }
+  
+  .team-member img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+
+  /* .........login.......... */
+
+  body{
+    background-color: rgb(207, 203, 203);
+    /* background-image: url('sunbird.jpg'); */
+    /* background-size: 100%; */
+  
+  }
+  
+  .form-control{
+    color: red;
+  }
+.sc{
+  text-align: center;
+  text-shadow: #ff0707;
+}

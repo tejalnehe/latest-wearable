@@ -1,0 +1,82 @@
+{% include 'watches/navbar.html' %}
+<!DOCTYPE html>
+{% load static %}
+<link rel="stylesheet" href="{% static 'watches/css/card.css' %}">
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Apple Watches</title>
+  <link rel="stylesheet" href="{% static 'watches/css/style.css' %}">
+</head>
+<body>
+
+  <div class="full-page-container">
+    
+    <img class="background-image" src="{% static 'watches/images/ser7 imgg.png' %}" alt="Background Image">
+    <div class="overlay-text">
+      <h1>Apple Event</h1>
+      <p>Apple introduces Apple Watch Series 2, the ultimate device for a healthy life
+
+
+
+      </p>
+    </div>
+
+    {% comment %} ....... {% endcomment %}
+
+  <div class="container " style="margin-top: 50px;">                         <!-- we have created new container class-->
+      <div class="row">                           <!-- we have created row class-->
+          {% for wh in watch %}
+            {% if 'product' == wh.categories %}
+          <div class="col-sm-4 ">      
+              <div class="card bed_categories_card bed_card" style="width: 22rem; height:30rem">
+                  <a href="{% url "watchdetails" wh.id %}"><img class="card-img-top " src="{{wh.brand_image.url}}" alt="Card image cap"></a>
+                  <div class="card-body">
+                    <h2 class="card-title">{{wh.name}}</h2>
+                    <h2 class="card-title">{{wh.selling_price}} rs</h2>
+                     <div class="text-center">
+                          <h5 class="font-weight-bold text-dark "><i class="fa-solid fa-indian-rupee-sign"></i> <small class="fw-light rupee"> {{wh.selling_price}}</small> <small class="text-danger">(% off)</small></h5>   
+                      </div>
+                  </div>
+              </div>
+            </a>
+          </div> 
+            {% endif %} 
+          {% endfor %}
+      </div>
+    </div>
+
+<br>
+<br>
+<!--########################### latest bands ###################### -->
+<h1>Apple Watch Band</h1>
+<div class="full-page-container">
+  
+  <img class="background-image" src="{% static 'watches/images/stripsimg.gif' %}" alt="Background Image">
+    <h1>Redesigned. Recycled. Ready for your run.</h1>
+    <h3>By using recycled content from past seasons’ bands and repurposing excess materials, we’ve redesigned these Nike bands to be more planet-friendly.</h3>
+
+<h1>Apple Watch Band</h1>
+<br>
+<hr>
+<div class="container " style="margin-top: 100px;">                         <!-- we have created new container class-->
+  <div class="row">                           <!-- we have created row class-->
+      {% for wh in watch %}
+        {% if 'strap' == wh.categories %}
+          <div class="col-sm-4 ">      
+            <div class="card bed_categories_card bed_card" style="width: 20rem; height:26rem">
+              <img class="card-img-top " src="{{wh.brand_image.url}}" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">{{wh.name}}</h5>
+                 <div class="text-center">
+                      <h5 class="font-weight-bold text-dark "><i class="fa-solid fa-indian-rupee-sign"></i> <small class="fw-light rupee"> {{wh.selling_price}}</small> <small class="text-danger">(% off)</small></h5> 
+                      
+                  </div>
+              </div>
+          </div>
+        </a>
+      </div>       
+      {% endif %} 
+      {% endfor %}
+  </div>
+</div>
