@@ -22,7 +22,7 @@ class Watch(models.Model):
     
 class Cart(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)       #Each cart instance is associated with a single user. 
-    product = models.ForeignKey(Watch, on_delete=models.CASCADE)     #Each cart instance is associated with a single pet product. Similarly, the on_delete=models.CASCADE argument means that if the referenced Pet object is deleted, the corresponding Cart instances associated with that product will be deleted.
+    product = models.ForeignKey(Watch, on_delete=models.CASCADE)     #Each cart instance is associated with a single watch product. Similarly, the on_delete=models.CASCADE argument means that if the referenced watch object is deleted, the corresponding Cart instances associated with that product will be deleted.
     quantity = models.PositiveIntegerField(default=1)              # Quantity cannot be negative so we have used PositiveIntegerField
 
 
